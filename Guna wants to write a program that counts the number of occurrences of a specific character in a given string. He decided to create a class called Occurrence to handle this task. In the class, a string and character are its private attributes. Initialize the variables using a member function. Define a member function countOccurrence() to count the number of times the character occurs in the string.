@@ -1,0 +1,29 @@
+#include <iostream>
+using namespace std;
+class Occurrence{
+    string str;
+    char c;
+    public:
+        void setValues(string instr , char inc){
+            str = instr;
+            c = inc;
+        }
+        int countOccurrence(){
+            int count =0;
+            for(int i=0;i<str.length();i++){
+                if(str[i] == c){
+                    count++;
+                }
+            }
+            return count;
+        }
+};
+int main(){
+    Occurrence oc;
+    string str;
+    char c;
+    cin>>str;
+    cin>>c;
+    oc.setValues(str,c);
+    cout<<oc.countOccurrence();
+}

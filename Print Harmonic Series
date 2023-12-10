@@ -1,0 +1,21 @@
+#include <iostream>
+
+using namespace std;
+
+int main() {
+    int n;
+
+    cout << "Enter the number of terms in the harmonic series: ";
+    cin >> n;
+
+    cout << "Harmonic series:\n";
+
+    float harmonicSum = 0;
+
+    for (int i = 1; i <= n; ++i) {
+        harmonicSum += 1.0 / i;
+        cout << harmonicSum << " ";
+    }
+
+    return 0;
+}
